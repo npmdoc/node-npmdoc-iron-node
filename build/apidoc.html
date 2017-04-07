@@ -1,0 +1,505 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/s-a/iron-node#readme"
+
+    >iron-node (v3.0.18)</a>
+</h1>
+<h4>Debug Node.js code on the fly with Chrome Developer Tools on Linux, Windows and OS X.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.iron-node">module iron-node</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.iron-node.menu">
+            function <span class="apidocSignatureSpan">iron-node.</span>menu
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.iron-node.update">
+            function <span class="apidocSignatureSpan">iron-node.</span>update
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">iron-node.</span>_iron_node</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">iron-node.</span>menu.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">iron-node.</span>update.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.iron-node._iron_node">module iron-node._iron_node</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.iron-node._iron_node.workSpaceDirectory">
+            function <span class="apidocSignatureSpan">iron-node._iron_node.</span>workSpaceDirectory
+            <span class="apidocSignatureSpan">(argv)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">iron-node._iron_node.</span>app</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">iron-node._iron_node.</span>nodeModule</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">iron-node._iron_node.</span>v8</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.iron-node.menu">module iron-node.menu</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.iron-node.menu.menu">
+            function <span class="apidocSignatureSpan">iron-node.</span>menu
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.iron-node.menu.prototype">module iron-node.menu.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.iron-node.menu.prototype.init">
+            function <span class="apidocSignatureSpan">iron-node.menu.prototype.</span>init
+            <span class="apidocSignatureSpan">(mainWindow)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.iron-node.update">module iron-node.update</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.iron-node.update.update">
+            function <span class="apidocSignatureSpan">iron-node.</span>update
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.iron-node.update.prototype">module iron-node.update.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.iron-node.update.prototype.check">
+            function <span class="apidocSignatureSpan">iron-node.update.prototype.</span>check
+            <span class="apidocSignatureSpan">(window)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.iron-node" id="apidoc.module.iron-node">module iron-node</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.iron-node.menu" id="apidoc.element.iron-node.menu">
+        function <span class="apidocSignatureSpan">iron-node.</span>menu
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">menu = function () {
+	return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.iron-node.update" id="apidoc.element.iron-node.update">
+        function <span class="apidocSignatureSpan">iron-node.</span>update
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">update = function () {
+	return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.iron-node._iron_node" id="apidoc.module.iron-node._iron_node">module iron-node._iron_node</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.iron-node._iron_node.workSpaceDirectory" id="apidoc.element.iron-node._iron_node.workSpaceDirectory">
+        function <span class="apidocSignatureSpan">iron-node._iron_node.</span>workSpaceDirectory
+        <span class="apidocSignatureSpan">(argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">workSpaceDirectory = function (argv) {  // determines the workspace directory for specific commandline applications.
+  var result = &#x22;&#x22;;
+  if (argv[2]){
+    result = path.dirname(argv[2]);
+    var startupScriptName = path.basename(argv[2]).toLowerCase();
+
+    switch(startupScriptName) {
+        case &#x22;_mocha&#x22;:
+          result = process.cwd();
+          break;
+        default:
+          result = path.resolve(result);
+          break;
+    }
+  }
+
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.iron-node.menu" id="apidoc.module.iron-node.menu">module iron-node.menu</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.iron-node.menu.menu" id="apidoc.element.iron-node.menu.menu">
+        function <span class="apidocSignatureSpan">iron-node.</span>menu
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">menu = function () {
+	return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.iron-node.menu.prototype" id="apidoc.module.iron-node.menu.prototype">module iron-node.menu.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.iron-node.menu.prototype.init" id="apidoc.element.iron-node.menu.prototype.init">
+        function <span class="apidocSignatureSpan">iron-node.menu.prototype.</span>init
+        <span class="apidocSignatureSpan">(mainWindow)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">init = function (mainWindow) {
+	var mnuFile = {
+		label: &#x22;Project&#x22;,
+		submenu: [
+			{
+				label: &#x22;Exit&#x22;,
+				click: function() {
+					mainWindow.close();
+				},
+				accelerator: &#x22;Control+w&#x22;
+			}
+		]
+	};
+
+  if (os.platform() === &#x22;darwin&#x22;) {
+    mnuFile.submenu.push({
+      type: &#x22;separator&#x22;
+    });
+    mnuFile.submenu.push({
+      label: &#x22;Quit ironNode&#x22;,
+      click: function () {
+        app.quit();
+      },
+      accelerator: &#x22;Cmd+Q&#x22;
+    });
+  }
+	template.push(mnuFile);
+
+	if (os.platform() === &#x22;darwin&#x22;){
+		var mnuEdit = {
+			label : &#x22;Edit&#x22;,
+			submenu:[
+				{
+					label: &#x22;Cut&#x22;,
+					accelerator: &#x22;Cmd+X&#x22;,
+					selector: &#x22;cut:&#x22;
+				},
+				{
+					label: &#x22;Copy&#x22;,
+					accelerator: &#x22;Cmd+C&#x22;,
+					selector: &#x22;copy:&#x22;
+				},
+				{
+					label: &#x22;Paste&#x22;,
+					accelerator: &#x22;Cmd+V&#x22;,
+					selector: &#x22;paste:&#x22;
+				},
+				{
+					label: &#x22;Select All&#x22;,
+					accelerator: &#x22;Cmd+A&#x22;,
+					selector: &#x22;selectAll:&#x22;
+				}
+			]
+		};
+
+		template.push(mnuEdit);
+	}
+
+	var mnuView =   {
+		label: &#x22;View&#x22;,
+		submenu: [
+			{
+				label: &#x22;Show developer tools&#x22;,
+				click: function() {
+					mainWindow.openDevTools();
+				},
+				accelerator: &#x22;F12&#x22;
+			},
+			{
+				label: &#x22;Show global config folder&#x22;,
+				click: function() {
+					var shell = require(&#x22;electron&#x22;).shell;
+					var f = path.join(app.getPath(&#x22;appData&#x22;), &#x22;iron-node&#x22;);
+					if (!fs.existsSync(f)){
+						console.warn(&#x22;No packages folder found. You can install some at &#x22; +  path.join( app.getPath(&#x22;appData&#x22;), &#x22;iron-node&#x22;, &#x22;node_modules
+&#x22; ) + &#x22; from &#x22;, &#x22;https://www.npmjs.com/search?q=iron-node&#x22;, &#x22;:O)&#x22;);
+					}
+					shell.openItem( f );
+				}
+			}
+		]
+	};
+	template.push(mnuView);
+
+	var mnuHelp =   {
+		label: &#x22;Help&#x22;,
+		submenu: [
+			{
+				label: &#x22;Documentation&#x22;,
+				click: function() {
+					shell.openExternal(&#x22;https://developer.chrome.com/devtools/docs/javascript-debugging&#x22;);
+				}
+			},
+			{
+				label: &#x22;Report a bug&#x22;,
+				click: function() {
+					shell.openExternal(&#x22;https://github.com/s-a/iron-node/issues&#x22;);
+				}
+			},
+			{
+				type: &#x22;separator&#x22;
+			},
+			{
+				label: &#x22;Source Code&#x22;,
+				click: function() {
+					shell.openExternal(&#x22;https://github.com/s-a/iron-node&#x22;);
+				}
+			},
+			{
+				type: &#x22;separator&#x22;
+			},
+			{
+				label: &#x22;Check for Updates&#x22;,
+				click: function() {
+					var upd = new SoftwareUpdate();
+					upd.check(mainWindow);
+				}
+			},
+			{
+				type: &#x22;separator&#x22;
+			},
+			{
+				label: &#x22;Donate&#x22;,
+				click: function() {
+					shell.openExternal(&#x22;http://s-a.github.io/donate/&#x22;);
+				}
+			}
+		]
+	};
+	template.push(mnuHelp);
+
+	var menu = Menu.buildFromTemplate(template);
+	Menu.setApplicationMenu(menu);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.iron-node.update" id="apidoc.module.iron-node.update">module iron-node.update</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.iron-node.update.update" id="apidoc.element.iron-node.update.update">
+        function <span class="apidocSignatureSpan">iron-node.</span>update
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">update = function () {
+	return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.iron-node.update.prototype" id="apidoc.module.iron-node.update.prototype">module iron-node.update.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.iron-node.update.prototype.check" id="apidoc.element.iron-node.update.prototype.check">
+        function <span class="apidocSignatureSpan">iron-node.update.prototype.</span>check
+        <span class="apidocSignatureSpan">(window)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">check = function (window) {
+	dialog.showMessageBox(window, {type:&#x22;info&#x22;, title:&#x22;ironNode Update check&#x22;, message:&#x22;Stay tuned. This may take a few seconds.&#x22;,
+detail:&#x22;&#x22;, buttons: [&#x22;ok&#x22;]});
+	execute(&#x22;npm outdated -g --depth=0 iron-node&#x22;, function(str){
+		dialog.showMessageBox(window, {type:&#x22;info&#x22;, title:&#x22;ironNode Update check done&#x22;, message:str, detail:&#x22;&#x22;, buttons: [&#x22;ok&#x22;]});
+	});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+			{
+				type: &#x22;separator&#x22;
+			},
+			{
+				label: &#x22;Check for Updates&#x22;,
+				click: function() {
+					var upd = new SoftwareUpdate();
+					upd.<span class="apidocCodeKeywordSpan">check</span>(mainWindow);
+				}
+			},
+			{
+				type: &#x22;separator&#x22;
+			},
+			{
+				label: &#x22;Donate&#x22;,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
