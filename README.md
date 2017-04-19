@@ -1,9 +1,14 @@
-# api documentation for  [iron-node (v3.0.18)](https://github.com/s-a/iron-node#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-iron-node.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-iron-node) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-iron-node.svg)](https://travis-ci.org/npmdoc/node-npmdoc-iron-node)
+# npmdoc-iron-node
+
+#### api documentation for  [iron-node (v3.0.18)](https://github.com/s-a/iron-node#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-iron-node.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-iron-node) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-iron-node.svg)](https://travis-ci.org/npmdoc/node-npmdoc-iron-node)
+
 #### Debug Node.js code on the fly with Chrome Developer Tools on Linux, Windows and OS X.
 
-[![NPM](https://nodei.co/npm/iron-node.png?downloads=true)](https://www.npmjs.com/package/iron-node)
+[![NPM](https://nodei.co/npm/iron-node.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/iron-node)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-iron-node/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-iron-node_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-iron-node/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-iron-node/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-iron-node/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-iron-node/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-iron-node/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-iron-node/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Stephan Ahlf",
-        "email": "stephan.ahlf@gmail.com",
         "url": "https://github.com/s-a"
     },
     "bin": {
@@ -60,8 +64,7 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "s-a",
-            "email": "stephan.ahlf@gmail.com"
+            "name": "s-a"
         }
     ],
     "name": "iron-node",
@@ -72,7 +75,6 @@
     ],
     "preferGlobal": true,
     "productName": "ironNode",
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/s-a/iron-node.git"
@@ -98,309 +100,6 @@
     },
     "version": "3.0.18"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module iron-node](#apidoc.module.iron-node)
-1.  [function <span class="apidocSignatureSpan">iron-node.</span>menu ()](#apidoc.element.iron-node.menu)
-1.  [function <span class="apidocSignatureSpan">iron-node.</span>update ()](#apidoc.element.iron-node.update)
-1.  object <span class="apidocSignatureSpan">iron-node.</span>_iron_node
-1.  object <span class="apidocSignatureSpan">iron-node.</span>menu.prototype
-1.  object <span class="apidocSignatureSpan">iron-node.</span>update.prototype
-
-#### [module iron-node._iron_node](#apidoc.module.iron-node._iron_node)
-1.  [function <span class="apidocSignatureSpan">iron-node._iron_node.</span>workSpaceDirectory (argv)](#apidoc.element.iron-node._iron_node.workSpaceDirectory)
-1.  object <span class="apidocSignatureSpan">iron-node._iron_node.</span>app
-1.  object <span class="apidocSignatureSpan">iron-node._iron_node.</span>nodeModule
-1.  object <span class="apidocSignatureSpan">iron-node._iron_node.</span>v8
-
-#### [module iron-node.menu](#apidoc.module.iron-node.menu)
-1.  [function <span class="apidocSignatureSpan">iron-node.</span>menu ()](#apidoc.element.iron-node.menu.menu)
-
-#### [module iron-node.menu.prototype](#apidoc.module.iron-node.menu.prototype)
-1.  [function <span class="apidocSignatureSpan">iron-node.menu.prototype.</span>init (mainWindow)](#apidoc.element.iron-node.menu.prototype.init)
-
-#### [module iron-node.update](#apidoc.module.iron-node.update)
-1.  [function <span class="apidocSignatureSpan">iron-node.</span>update ()](#apidoc.element.iron-node.update.update)
-
-#### [module iron-node.update.prototype](#apidoc.module.iron-node.update.prototype)
-1.  [function <span class="apidocSignatureSpan">iron-node.update.prototype.</span>check (window)](#apidoc.element.iron-node.update.prototype.check)
-
-
-
-# <a name="apidoc.module.iron-node"></a>[module iron-node](#apidoc.module.iron-node)
-
-#### <a name="apidoc.element.iron-node.menu"></a>[function <span class="apidocSignatureSpan">iron-node.</span>menu ()](#apidoc.element.iron-node.menu)
-- description and source-code
-```javascript
-menu = function () {
-	return this;
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.iron-node.update"></a>[function <span class="apidocSignatureSpan">iron-node.</span>update ()](#apidoc.element.iron-node.update)
-- description and source-code
-```javascript
-update = function () {
-	return this;
-}
-```
-- example usage
-```shell
-n/a
-```
-
-
-
-# <a name="apidoc.module.iron-node._iron_node"></a>[module iron-node._iron_node](#apidoc.module.iron-node._iron_node)
-
-#### <a name="apidoc.element.iron-node._iron_node.workSpaceDirectory"></a>[function <span class="apidocSignatureSpan">iron-node._iron_node.</span>workSpaceDirectory (argv)](#apidoc.element.iron-node._iron_node.workSpaceDirectory)
-- description and source-code
-```javascript
-workSpaceDirectory = function (argv) {  // determines the workspace directory for specific commandline applications.
-  var result = "";
-  if (argv[2]){
-    result = path.dirname(argv[2]);
-    var startupScriptName = path.basename(argv[2]).toLowerCase();
-
-    switch(startupScriptName) {
-        case "_mocha":
-          result = process.cwd();
-          break;
-        default:
-          result = path.resolve(result);
-          break;
-    }
-  }
-
-  return result;
-}
-```
-- example usage
-```shell
-n/a
-```
-
-
-
-# <a name="apidoc.module.iron-node.menu"></a>[module iron-node.menu](#apidoc.module.iron-node.menu)
-
-#### <a name="apidoc.element.iron-node.menu.menu"></a>[function <span class="apidocSignatureSpan">iron-node.</span>menu ()](#apidoc.element.iron-node.menu.menu)
-- description and source-code
-```javascript
-menu = function () {
-	return this;
-}
-```
-- example usage
-```shell
-n/a
-```
-
-
-
-# <a name="apidoc.module.iron-node.menu.prototype"></a>[module iron-node.menu.prototype](#apidoc.module.iron-node.menu.prototype)
-
-#### <a name="apidoc.element.iron-node.menu.prototype.init"></a>[function <span class="apidocSignatureSpan">iron-node.menu.prototype.</span>init (mainWindow)](#apidoc.element.iron-node.menu.prototype.init)
-- description and source-code
-```javascript
-init = function (mainWindow) {
-	var mnuFile = {
-		label: "Project",
-		submenu: [
-			{
-				label: "Exit",
-				click: function() {
-					mainWindow.close();
-				},
-				accelerator: "Control+w"
-			}
-		]
-	};
-
-  if (os.platform() === "darwin") {
-    mnuFile.submenu.push({
-      type: "separator"
-    });
-    mnuFile.submenu.push({
-      label: "Quit ironNode",
-      click: function () {
-        app.quit();
-      },
-      accelerator: "Cmd+Q"
-    });
-  }
-	template.push(mnuFile);
-
-	if (os.platform() === "darwin"){
-		var mnuEdit = {
-			label : "Edit",
-			submenu:[
-				{
-					label: "Cut",
-					accelerator: "Cmd+X",
-					selector: "cut:"
-				},
-				{
-					label: "Copy",
-					accelerator: "Cmd+C",
-					selector: "copy:"
-				},
-				{
-					label: "Paste",
-					accelerator: "Cmd+V",
-					selector: "paste:"
-				},
-				{
-					label: "Select All",
-					accelerator: "Cmd+A",
-					selector: "selectAll:"
-				}
-			]
-		};
-
-		template.push(mnuEdit);
-	}
-
-	var mnuView =   {
-		label: "View",
-		submenu: [
-			{
-				label: "Show developer tools",
-				click: function() {
-					mainWindow.openDevTools();
-				},
-				accelerator: "F12"
-			},
-			{
-				label: "Show global config folder",
-				click: function() {
-					var shell = require("electron").shell;
-					var f = path.join(app.getPath("appData"), "iron-node");
-					if (!fs.existsSync(f)){
-						console.warn("No packages folder found. You can install some at " +  path.join( app.getPath("appData"), "iron-node", "node_modules
-" ) + " from ", "https://www.npmjs.com/search?q=iron-node", ":O)");
-					}
-					shell.openItem( f );
-				}
-			}
-		]
-	};
-	template.push(mnuView);
-
-	var mnuHelp =   {
-		label: "Help",
-		submenu: [
-			{
-				label: "Documentation",
-				click: function() {
-					shell.openExternal("https://developer.chrome.com/devtools/docs/javascript-debugging");
-				}
-			},
-			{
-				label: "Report a bug",
-				click: function() {
-					shell.openExternal("https://github.com/s-a/iron-node/issues");
-				}
-			},
-			{
-				type: "separator"
-			},
-			{
-				label: "Source Code",
-				click: function() {
-					shell.openExternal("https://github.com/s-a/iron-node");
-				}
-			},
-			{
-				type: "separator"
-			},
-			{
-				label: "Check for Updates",
-				click: function() {
-					var upd = new SoftwareUpdate();
-					upd.check(mainWindow);
-				}
-			},
-			{
-				type: "separator"
-			},
-			{
-				label: "Donate",
-				click: function() {
-					shell.openExternal("http://s-a.github.io/donate/");
-				}
-			}
-		]
-	};
-	template.push(mnuHelp);
-
-	var menu = Menu.buildFromTemplate(template);
-	Menu.setApplicationMenu(menu);
-}
-```
-- example usage
-```shell
-n/a
-```
-
-
-
-# <a name="apidoc.module.iron-node.update"></a>[module iron-node.update](#apidoc.module.iron-node.update)
-
-#### <a name="apidoc.element.iron-node.update.update"></a>[function <span class="apidocSignatureSpan">iron-node.</span>update ()](#apidoc.element.iron-node.update.update)
-- description and source-code
-```javascript
-update = function () {
-	return this;
-}
-```
-- example usage
-```shell
-n/a
-```
-
-
-
-# <a name="apidoc.module.iron-node.update.prototype"></a>[module iron-node.update.prototype](#apidoc.module.iron-node.update.prototype)
-
-#### <a name="apidoc.element.iron-node.update.prototype.check"></a>[function <span class="apidocSignatureSpan">iron-node.update.prototype.</span>check (window)](#apidoc.element.iron-node.update.prototype.check)
-- description and source-code
-```javascript
-check = function (window) {
-	dialog.showMessageBox(window, {type:"info", title:"ironNode Update check", message:"Stay tuned. This may take a few seconds.",
-detail:"", buttons: ["ok"]});
-	execute("npm outdated -g --depth=0 iron-node", function(str){
-		dialog.showMessageBox(window, {type:"info", title:"ironNode Update check done", message:str, detail:"", buttons: ["ok"]});
-	});
-}
-```
-- example usage
-```shell
-...
-			{
-				type: "separator"
-			},
-			{
-				label: "Check for Updates",
-				click: function() {
-					var upd = new SoftwareUpdate();
-					upd.check(mainWindow);
-				}
-			},
-			{
-				type: "separator"
-			},
-			{
-				label: "Donate",
-...
 ```
 
 
