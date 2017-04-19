@@ -254,7 +254,23 @@
 
   return result;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	for (var i = 2; i &#x3c; args.length; i++) {
+		var arg = args[i];
+		process.argv.push(arg);
+	}
+
+	if (args[2]){
+		var webContents = remote.getCurrentWindow().webContents;
+		var workSpaceDirectory = config.settings.<span class="apidocCodeKeywordSpan">workSpaceDirectory</span>(args);
+		if (!Array.isArray(workSpaceDirectory)){
+			workSpaceDirectory = [workSpaceDirectory];
+		}
+		if (config.settings.app.autoAddWorkSpace !== false){
+			for (var w = 0; w &#x3c; workSpaceDirectory.length; w++) {
+				var wsd = workSpaceDirectory[w];
+				try {
+...</pre></li>
     </ul>
 
 
